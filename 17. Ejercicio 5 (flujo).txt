@@ -1,0 +1,13 @@
+biblioteca IEEE;
+utilice IEEE.std_logic_1164.all;
+entidad twe es
+	puerto (E0, E1, E2, E3: en std_logic; SELA, SELB, SELC: en std_logic; F: fuera de std_logic);
+fin twe;
+
+arquitectura demotwe de twe es
+empezar
+  F <= E3 cuando SELC = '1' si no
+  E2 cuando SELB = '1' si no
+  E1 cuando SELA = '1' si no
+  E0;
+end demotwe;
