@@ -1,0 +1,20 @@
+  Librery IEEE;
+  utilice IEEE.std_logic_ll64.all;
+
+  ejercicio de la entidad es
+      Puerto(
+          A, B: IN std_logic;
+          C: fuera std_logic
+      );
+  fin del ejercicio;
+
+  arquitectura estilofuncional del ejercicio es
+  empezar 
+  process (A, B) - es sensato cuando se tiene una variacion de estas señales ayb
+  empezar
+    	si A = 1 o B = 1 o C = 1 entonces
+    	C <= '1';
+    	si no C <= '0';
+   terminara si;
+  en proceso;
+  fin estilofuncional;

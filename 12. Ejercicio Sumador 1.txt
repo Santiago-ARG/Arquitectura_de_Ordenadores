@@ -1,0 +1,10 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use work.std_arith.all;
+
+entidad Sumador es
+Puerto(
+ 	A, B: en std_logic_vector (0 a 1);
+    	SUMA: fuera std_logic_vector (0 a 1);
+);
+fin de Sumador;

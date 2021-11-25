@@ -1,0 +1,13 @@
+Library IEEE;
+utilice IEEE.std_logic_1164.all;
+
+entidad TAbla es
+puerto (A, B: en std_logic;
+	F: fuera en std_logic);
+end Tabla;
+
+La arquitectura P_AND de Tabla es
+empezar 
+ 	F <= '1' cuando (A = '1' y B = '1') más
+    	'0'
+end P_AND; 

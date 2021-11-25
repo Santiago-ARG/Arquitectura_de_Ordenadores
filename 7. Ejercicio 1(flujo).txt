@@ -1,0 +1,15 @@
+// Code your testbench here
+library iee;
+use ieee.std_logic_1164.all;
+
+entity ejercicio is
+port (a, b, c, d: in std_logic; f1 : out std_logic);
+end ejercicio;
+
+use work.gates.all;
+
+arquitecture flujo of ejercicio is
+begin
+	f1 <= ((a or b) and (c and d)) or not ((a or b) and (c and d))
+	//f1 <= (a or b) xnor (c and d);
+end flujo;

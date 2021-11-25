@@ -1,0 +1,13 @@
+biblioteca IEEE;
+utilice IEEE.std_logic_1164.all;
+entidad twe es
+	puerto (a, b, c: en std_logic; f: fuera de std_logic);
+fin twe;
+
+arquitectura demotwe de twe es
+empezar
+  	f <= '1' cuando (a = '0' y b = '0' y c = '0') else
+    	'1' cuando (a = '0' yb = '1' yc = '1') más
+     	'1' cuando (a = '1' yb = '1' yc = '0') más
+       	'1' cuando (a = '1' yb = '1' yc = '1') más '0';
+end demotwe;

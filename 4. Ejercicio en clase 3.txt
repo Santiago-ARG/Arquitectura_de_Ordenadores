@@ -1,0 +1,5 @@
+entidad Bloque es
+puerto (X: en std_logic_vector (1 downto 0);
+	A, B: en std_logic;
+	Z: fuera std_logic_vector (0 hasta 3));
+end Bloque;

@@ -1,0 +1,21 @@
+--Ejercicio de estilo Estructural
+biblioteca ieee;
+use ieee.std_logic_1164.all;
+
+la composición de la entidad es
+	puerto (A, B, C: en std_logic; F: fuera de std_logic);
+poner fin a la composicion;
+
+use work.gates.all;
+
+arquitectura estructural de composicion es
+señal x: bit_vector (0 a 2);
+empezar
+	U0: mapa de puertos and2 (B, C, x (0));
+
+	U1: mapa de puertos y2 (C, A, x (1));
+
+	U2: mapa de puertos and2 (A, B, x (2));
+
+	U3: mapa de puertos o3 (x (0), x (1), x (2), F);
+final estructural;

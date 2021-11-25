@@ -1,0 +1,16 @@
+// Code your testbench here
+//Declaraciones
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity declaracion is port(a, b, c, d, e, f: in std_logic_vector;
+	x1, x2, x3: out std_logic;
+end declaracion;
+
+architcture decl of declaracion is
+//signal C: stf_logic_vector (0 to 2);
+begin
+    x1 <= a xnor b;
+    x2 <= ((c and d) or x1) nand ((e xor f) and (c and d));
+    x3 <= (e xor f) and (c and d);
+end decl;

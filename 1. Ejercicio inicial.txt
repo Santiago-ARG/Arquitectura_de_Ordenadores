@@ -1,0 +1,11 @@
+la entidad Ejercicio1 es
+puerto (a, b, c, d, e, f, g, h: en bits;
+	F: bit de salida):
+end Ejercicio1;
+
+--Ejercicio 2
+la entidad Ejercicio2 es
+puerto (A3, A2, A1, A0, B3, B2, B1, B0: en bit;
+	S3, S2, S1, S0: bit de salida;
+	C3, C2, C1, C0: bit de entrada y salida):
+end Ejercicio2;

@@ -1,0 +1,17 @@
+// Codifique su banco de pruebas aquí
+biblioteca IEEE;
+utilice iEEE.std_logic_1164.all;
+
+la entidad circuito1 es
+puerto (a0, b0, a1, b1: in bit_vector (0 a 1); c: salida bit);
+end circuito1;
+
+use work.gates.all;
+
+La arquitectura estructural del circuito1 es
+señal x: bit_vector (0 a 1);
+empezar
+    U0: mapa de puertos xnor2 (a (0), b (0), x (0));
+    U1: mapa de puertos xnor2 (a (1), b (1), x (1));
+    U2: mapa de puertos and2 (x (0), x (1), c);
+final estructural;

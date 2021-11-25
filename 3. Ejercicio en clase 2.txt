@@ -1,0 +1,5 @@
+El control de la entidad es
+puerto (Q: en bit_vector (3 downto 0);
+	F: salida bit_vector (0 hasta 7)):
+Control final;
+
