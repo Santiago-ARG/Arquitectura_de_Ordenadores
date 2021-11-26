@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity cuestionario_17 is
+port (a0, b0, a1, b1, a2, b2, a3, b3: in std_logic; F : out std_logic);
+end cuestionario_17;
+
+use work.gates.all;
+
+arquitecture flujo of cuestionario_17 is
+begin
+	F <= (a0 or b0) and (a1 or b1) and (a2 or b2) and (a3 or b3);
+end flujo;
